@@ -57,7 +57,9 @@ export default class App {
       res.send(`Hello, Purwadhika Student !`);
     });
 
-    this.app.use('/samples', sampleRouter.getRouter());
+    // insert use routers here:
+    // this.app.use('/samples', sampleRouter.getRouter());
+    
   }
 
   public start(): void {

@@ -4,6 +4,10 @@ import './globals.css';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 
+// Providers
+import ReduxProvider from '@/providers/reduxProvider';
+import { TanstackProvider } from '@/providers/tanstackProvider';
+
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -19,9 +23,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header />
-        {children}
-        <Footer />
+        <ReduxProvider>
+          <TanstackProvider>
+            <Header />
+              {children}
+            <Footer />
+          </TanstackProvider>
+        </ReduxProvider>
       </body>
     </html>
   );

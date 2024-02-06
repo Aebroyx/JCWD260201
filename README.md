@@ -2,7 +2,38 @@
 
 This project uses React.js with NextJS for the frontend, Express.js for the backend, and TurboRepo for monorepo management, facilitating rapid development of a scalable web application with streamlined collaboration and efficient server-client interactions.
 
+## Frontend Web Libraries Includes
+- tanstack
+### `npm i @tanstack/react-query`
+- axios
+### `npm install axios`
+- redux
+### `npm install @reduxjs/toolkit`
+### `npm install react-redux`
+- formik
+### `npm install formik --save`
+- yup
+### `npm install yup`
+- tailwindcss
+- moment
+### `npm install moment --save`
+
+## Backend API Libraries Includes
+- dotenv cli
+### `npm install -g dotenv-cli`
+- jsonwebtoken (JWT)
+### `npm install @types/jsonwebtoken`
+- multer
+### `npm install --save @types/multer`
+- moment
+### `npm install @types/moment --save`
+
+
 ## Available Scripts
+
+### `npx dotenv -e .env.development -- npx prisma migrate dev`
+
+Runs prisma migrate.
 
 ### `npm run dev`
 
